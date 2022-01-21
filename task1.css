@@ -1,0 +1,352 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    scroll-behavior: smooth;
+}
+p{
+    font-weight: 300;
+    color:#111;
+}
+body{
+    min-height: 1000px;
+}
+#menu{
+    font-size: 2rem;
+    color:#666;
+    cursor:pointer;
+    padding:1rem 1rem;
+    border: 1rem solid rgba(0,0,0,.2);
+    border-radius: .1rem;
+    display:none;
+}
+.banner{
+    position:relative;
+    background: url('Images/mainimg.jpg');
+    -webkit-display:flex;
+    padding: 15px;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+}
+.banner .content{
+    max-width: 1000px;
+    text-align:left;
+}
+.banner .content h2{
+    margin-right: 9rem;
+    font-size: 4em;
+    color:black;
+}
+.banner .content p{
+    margin-right: 9rem;
+    font-size: 1em;
+    color: black;
+}
+.btn{
+    font-size: 1em;
+    color:black;
+    background:#ff0157;
+    display:inline-block;
+    padding:10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition:0.5s;
+}
+.btn:hover{
+    letter-spacing: 6px;
+
+}
+header{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:40px 100px;
+    z-index:10000;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5;
+}
+header.sticky{
+    background: #ffccff;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+header .logo{
+    color:#ff0157;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+header.sticky .logo{
+    color:#111;
+
+}
+header .logo span{
+    color:cyan;
+}
+header .navigation{
+    position: relative;
+    display:flex;
+   
+}
+header .navigation li{
+    list-style: none;
+    margin-left: 30px;
+}
+header .navigation li a{
+    text-decoration: none;
+    color:black;
+
+}
+header .navigation li a:hover{
+    color:cyan;
+}
+/*introduction start*/
+section{
+    padding: 100px;
+}
+
+.row{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.row .col{ 
+    position: relative;
+    width: 48%;
+}
+.titleText{
+    margin:1rem 0;
+    text-align: center;
+    padding: 1rem 0;
+    padding-top: 0rem;
+    color:black;
+    font-size: 4em;
+    font-weight: 300;
+    
+}
+.row .col .imgBx{
+    position: relative;
+    width:100%;
+    height: 100%;
+    min-height:300px;
+}
+.row .col .imgBx img{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+/*introduction end*/
+
+/*Products start*/
+.products{
+    background-color: #ffffd2;
+    padding:100px;
+    text-align: center;
+
+}
+.products h1{
+    display: inline-block;
+    font-size: 30px;
+	font-weight: 500;
+	color:#000000;
+	margin-bottom:6rem ;
+}
+.products .content{
+    display:flex;
+}
+.products .content .box{
+    border:1px solid black;
+    max-width:330px;
+    padding:10px;
+    position:relative;
+    border-radius: 0rem;
+    
+}
+.products .content .box .innerimg{
+    position: relative;
+    overflow: hidden;
+}
+.products .content .box .innerimg .img img{
+    height:250px;
+    width:300px;
+    
+}
+.products .content .box .text h4{
+    font-size: 20px; 
+}
+.products .content .text .btn{
+    background-color: #ddd;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition: 0.3s;
+  
+}
+.products .content .box .text .btn:hover{
+    color:white;
+    background: #ff0157;
+}
+
+/*Product end*/
+
+/*gallery start*/
+.gallery{
+    padding:100px;
+    text-align: center;
+}
+.heading{
+    display: inline-block;
+    color:black;
+    margin:1rem 0;
+    padding: 1rem 0;
+    padding-top: 0rem;
+    font-size: 30px;
+}
+
+.gallery .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.gallery .box-container .box{
+    height:15rem;
+    width:25rem;
+    margin:1rem;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.gallery .box-container .box img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+}
+.gallery .box-container .box img:hover{
+    transform:scale(1.5);
+}
+/*gallery end*/
+
+/*review start*/
+.review{
+    padding: 40px 0;
+    background:white;
+    color:black;
+    text-align: center;
+}
+.inner{
+    max-width: 1200px;
+    margin:auto;
+    overflow: hidden;
+    padding:0 20px;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.col{
+    flex:33.33%;
+    max-width: 33.33%;
+    box-sizing: border-box;
+    padding:15px;
+}
+.reviews{
+    background:whitesmoke;
+    padding:30px;
+}
+.reviews img{
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+}
+.name{
+    font-size: 20px;
+    margin:20px 0;
+}
+.star{
+    color:green;
+    margin-bottom: 20px;
+}
+/*review end*/
+
+/*contact start*/
+.contact{
+    padding:80px 0px;
+    background-color:#ffccff;
+    text-align: center;
+}
+.heading{
+    display: inline-block;
+    color:black;
+    margin:1rem 0;
+    padding: 1rem 0;
+    padding-top: 0rem;
+    font-size: 30px;
+}
+.contact .content{
+    -webkit-display: flex;
+    display: flex;
+}
+
+.contact .content .box{
+    flex:0 0 50%;
+    max-width: 50%;
+    padding: 15px;
+}
+.contact .content .form input,
+.contact .content .form textarea{
+ height: 45px;
+ width: 100%;
+ padding:6px 12px;
+ margin-bottom: 25px;
+ background-color: transparent;
+ border:1px solid black;
+ font-family: 'Open-sans',sans-serif;
+ color:#ffffff;
+}
+.contact .content .form input:focus,
+.contact .content .form textarea:focus{
+ outline: none;
+}
+.contact .content .form input::placeholder,
+.contact .content .form textarea::placeholder{
+    color:black;
+}
+.contact .content .form textarea{
+    height: 100px;
+}
+.contact .content .form button{
+    background-color: #ddd;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition: 0.3s;
+  }
+  .contact .content .form .btn:hover {
+   color:white;
+    background: #ff0157;
+  }
+  
+  /*contact end*/
